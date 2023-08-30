@@ -1,0 +1,7 @@
+<ul>
+  <li *ngFor="let contact of contacts">
+    {{ contact.name }}
+    <button (click)="editContact.emit(contact)">Edit</button>
+    <button (click)="deleteContact.emit(contact)">Delete</button>
+  </li>
+</ul>

@@ -1,0 +1,13 @@
+<div>
+  <label>Name:</label>
+  <input [(ngModel)]="contact.name" />
+</div>
+<div>
+  <label>Phone Number:</label>
+  <input [(ngModel)]="contact.phone" />
+</div>
+<div>
+  <label>Email:</label>
+  <input [(ngModel)]="contact.email" />
+</div>
+<button (click)="saveContact.emit(contact)">Save</button>

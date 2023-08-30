@@ -1,0 +1,9 @@
+<div>
+  <app-contact-form (saveContact)="saveContact($event)"></app-contact-form>
+  <app-contact-list
+    [contacts]="contacts"
+    (editContact)="editContact($event)"
+    (deleteContact)="deleteContact($event)"
+  ></app-contact-list>
+  <app-contact-details [contact]="selectedContact"></app-contact-details>
+</div>
